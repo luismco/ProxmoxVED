@@ -13,7 +13,7 @@ setting_up_container
 network_check
 update_os
 
-fetch_and_deploy_gh_release "Krawl" "BlessedRebuS/Krawl" "tarball" "v0.1.2-prerelease"
+fetch_and_deploy_gh_release "Krawl" "BlessedRebuS/Krawl"
 
 msg_info "Configuring Variables"
 cat <<EOF >/opt/krawl/.env
