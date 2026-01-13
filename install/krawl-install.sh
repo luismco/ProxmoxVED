@@ -6,7 +6,6 @@
 # Source: https://github.com/ThePhaseless/Byparr
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
-color
 verb_ip6
 catch_errors
 setting_up_container
