@@ -16,7 +16,7 @@ update_os
 fetch_and_deploy_gh_release "Krawl" "BlessedRebuS/Krawl" "tarball" "v0.1.2-prerelease"
 
 msg_info "Configuring Variables"
-cat <<EOF >/opt/krawl/.env
+cat <<EOF >/opt/Krawl/.env
 # PORT=3500
 # DELAY=100
 # LINKS_MIN_LENGTH=5
@@ -44,8 +44,8 @@ Wants=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/opt/krawl
-ExecStart=/bin/bash -c 'set -a && source /opt/krawl/src/.env && set +a && exec /usr/bin/python3 /opt/krawl/src/server.py'
+WorkingDirectory=/opt/Krawl
+ExecStart=/bin/bash -c 'set -a && source /opt/Krawl/src/.env && set +a && exec /usr/bin/python3 /opt/Krawl/src/server.py'
 Restart=always
 RestartSec=10
 TimeoutStopSec=30
