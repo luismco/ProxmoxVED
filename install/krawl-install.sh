@@ -17,7 +17,7 @@ fetch_and_deploy_gh_release "Krawl" "BlessedRebuS/Krawl" "tarball" "v0.1.2-prere
 
 msg_info "Configuring Variables"
 cat <<EOF >/opt/Krawl/.env
-# PORT=3500
+# PORT=5000
 # DELAY=100
 # LINKS_MIN_LENGTH=5
 # LINKS_MAX_LENGTH=15
@@ -26,7 +26,7 @@ cat <<EOF >/opt/Krawl/.env
 # MAX_COUNTER=10
 # CANARY_TOKEN_TRIES=10
 # PROBABILITY_ERROR_CODES=0
-# SERVER_HEADER=Apache/2.2.22 (Ubuntu)
+# SERVER_HEADER="Apache/2.2.22 (Ubuntu)"
 ## Optional: Set your canary token URL
 # CANARY_TOKEN_URL=http://canarytokens.com/api/users/YOUR_TOKEN/passwords.txt
 ## Optional: Set custom dashboard path (auto-generated if not set)
