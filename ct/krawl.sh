@@ -23,7 +23,7 @@ function update_script() {
   header_info
   check_container_storage
   check_container_resources
-  if [[ ! -d /opt/krawl ]]; then
+  if [[ ! -d /opt/Krawl ]]; then
     msg_error "No ${APP} Installation Found!"
     exit
   fi
@@ -34,17 +34,17 @@ function update_script() {
     msg_ok "Stopped Service"
 
     msg_info "Backing up Configuration and Logs"
-    cp /opt/krawl/.env /tmp/krawl.env.bak
-    cp -r /opt/krawl/logs /tmp/krawl/
+    cp /opt/Krawl/.env /tmp/Krawl.env.bak
+    cp -r /opt/Krawl/logs /tmp/Krawl/
     msg_ok "Backed up Configuration and Logs"
 
     fetch_and_deploy_gh_release "Krawl" "BlessedRebuS/Krawl"
 
     msg_info "Restoring Configuration and Logs"
-    cp /tmp/krawl.env.bak /opt/krawl/.env
-    cp -r /tmp/krawl/logs /opt/krawl
-    rm -f /tmp/krawl.env.bak
-    rm -rf /tmp/krawl/logs
+    cp /tmp/Krawl.env.bak /opt/Krawl/.env
+    cp -r /tmp/Krawl/logs /opt/Krawl
+    rm -f /tmp/Krawl.env.bak
+    rm -rf /tmp/Krawl/logs
     msg_ok "Restored Configuration and Logs"
 
     msg_info "Starting Service"
