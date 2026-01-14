@@ -28,7 +28,7 @@ function update_script() {
     exit
   fi
 
-  if check_for_gh_release "Krawl" "BlessedRebuS/Krawl"; then
+  if check_for_gh_release "Krawl" "BlessedRebuS/Krawl" "tarball" "v0.1.2-prerelease"; then
     msg_info "Stopping Service"
     systemctl stop krawl
     msg_ok "Stopped Service"
