@@ -38,7 +38,7 @@ function update_script() {
     cp -r /opt/Krawl/logs /tmp/Krawl/
     msg_ok "Backed up Configuration and Logs"
 
-    fetch_and_deploy_gh_release "Krawl" "BlessedRebuS/Krawl"
+    fetch_and_deploy_gh_release "Krawl" "BlessedRebuS/Krawl" "tarball" "v0.1.2-prerelease"
 
     msg_info "Restoring Configuration and Logs"
     cp /tmp/Krawl.env.bak /opt/Krawl/.env
