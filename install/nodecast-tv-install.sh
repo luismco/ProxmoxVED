@@ -13,6 +13,8 @@ setting_up_container
 network_check
 update_os
 
+setup_hwaccel
+
 fetch_and_deploy_gh_release "nodecast-tv" "technomancer702/nodecast-tv"
 setup_nodejs
 
