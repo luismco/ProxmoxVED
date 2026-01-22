@@ -13,6 +13,8 @@ setting_up_container
 network_check
 update_os
 
+apt install libsvtav1enc-dev -y
+
 setup_hwaccel
 setup_ffmpeg
 
