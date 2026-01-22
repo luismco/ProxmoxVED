@@ -13,10 +13,11 @@ setting_up_container
 network_check
 update_os
 
-apt install build-essential -y
+msg_info "Installing Dependencies"
+$STD apt-get install -y ffmpeg
+msg_ok "Installed Dependencies"
 
 setup_hwaccel
-setup_ffmpeg
 
 fetch_and_deploy_gh_release "nodecast-tv" "technomancer702/nodecast-tv"
 setup_nodejs
