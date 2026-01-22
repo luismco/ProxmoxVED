@@ -13,10 +13,8 @@ setting_up_container
 network_check
 update_os
 
-apt install libsvtav1enc-dev -y
-
 setup_hwaccel
-setup_ffmpeg
+TYPE=medium setup_ffmpeg
 
 fetch_and_deploy_gh_release "nodecast-tv" "technomancer702/nodecast-tv"
 setup_nodejs
