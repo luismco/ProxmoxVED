@@ -14,7 +14,6 @@ network_check
 update_os
 
 setup_hwaccel
-TYPE=medium setup_ffmpeg
 
 fetch_and_deploy_gh_release "nodecast-tv" "technomancer702/nodecast-tv"
 setup_nodejs
